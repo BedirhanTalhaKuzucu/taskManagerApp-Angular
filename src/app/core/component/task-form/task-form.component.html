@@ -1,0 +1,19 @@
+<div class='Add-Task'>
+
+    <form [formGroup]="getTaskDetail"  (submit)="formSubmit()"  required >
+
+        <div class='task-input'>
+            <label htmlFor="task">Task</label>
+            <input type="text" id='task' placeholder='AddTask' formControlName="text"  required />
+        </div>
+
+        <div class='task-input'>
+            <label htmlFor="date">Day & Time</label>
+            <input type="text" id='date' placeholder='Add Day&Time' formControlName="day" required />
+        </div>
+
+        <input type="submit"  value="Save Task" required class='save-task' />
+
+    </form>
+
+</div>

@@ -1,0 +1,36 @@
+.Add-Task{
+    padding: 1rem 2rem;
+    background-color: inherit;
+    margin: auto;
+}
+
+
+.task-input{
+    background-color: inherit;
+    margin-bottom: 1rem;
+}
+
+
+
+label{
+    display: block;
+    background-color: inherit;
+    margin-bottom: 0.5rem;
+
+}
+input{
+    width: 100%;
+    background-color: aliceblue;
+    border: none;
+    padding: 5px;
+}
+
+.save-task{
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    
+}
