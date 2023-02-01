@@ -9,7 +9,7 @@ export class HeaderComponent {
 
   openClose : boolean = true
   @Output() buttonValue = new EventEmitter<any>
-  buttonBackgroun:string = "purple" 
+  buttonBackgroun:string = "red" 
 
   buttonClick(openClose:boolean){
     this.openClose = !openClose
