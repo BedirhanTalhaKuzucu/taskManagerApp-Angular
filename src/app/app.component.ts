@@ -12,13 +12,15 @@ export class AppComponent implements OnInit {
   openClose:boolean = true
   taskList: any = []
 
-  constructor( public service : TasklistService ){}
+  constructor(
+    //  public service : TasklistService 
+    ){}
 
   ngOnInit(): void {
-    this.service.getTaskList("/tasks").subscribe((list)=>{
-      this.taskList = list
-      console.log(this.taskList.length )
-    })
+    // this.service.getTaskList("/tasks").subscribe((list)=>{
+    //   this.taskList = list
+    //   console.log(this.taskList.length )
+    // })
   }
 
   openCloseMethod(value: any){
