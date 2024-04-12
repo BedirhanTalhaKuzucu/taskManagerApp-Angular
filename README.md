@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # TaskTrackAngularApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
@@ -30,3 +31,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # taskManagerApp-Angular
 it is build with angular
 >>>>>>> effff5e (Initial commit)
+=======
+# taskManagerApp-Angular
+
+it is build with angular
+>>>>>>> 9d06fe26f6b78e3953c8ed9fd8e1b3dbe8cfec94
