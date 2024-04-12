@@ -1,7 +1,7 @@
-<div class="task-item" [class.done]="isFinished" (click)="makeDone()"  >
-    <div>
-        <h4> {{ index + 1}}. {{ task.text }} </h4>
-        <p> {{task.day }}  </p>
-    </div>
-    <span (click)="deleteTask(task.id)" > X </span>
+<div class="task-item" [class.done]="isFinished" (click)="makeDone()">
+  <div>
+    <h4>{{ index + 1 }}. {{ task.text }}</h4>
+    <p>{{ task.date }}</p>
+  </div>
+  <span (click)="deleteTask(task.id)"> X </span>
 </div>

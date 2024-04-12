@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/component/header/header.component';
 import { TaskFormComponent } from './core/component/task-form/task-form.component';
 import { TasksComponent } from './core/component/tasks/tasks.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TasksComponent } from './core/component/tasks/tasks.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    NgbModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
