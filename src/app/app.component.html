@@ -1,6 +1,7 @@
 <div class="task-tracker">
-  <app-header (buttonValue)="openCloseMethod($event)"></app-header>
-  <app-task-form *ngIf="openClose" (getNewTask)="getNewTask($event)">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <!-- <app-task-form *ngIf="openClose" (getNewTask)="getNewTask($event)">
   </app-task-form>
   <div class="tasks">
     <app-tasks
@@ -10,5 +11,5 @@
       (getIdtoDelete)="deleteTask($event)"
     ></app-tasks>
     <h3 *ngIf="taskList.length == 0">NO TASK TO SHOW</h3>
-  </div>
+  </div> -->
 </div>

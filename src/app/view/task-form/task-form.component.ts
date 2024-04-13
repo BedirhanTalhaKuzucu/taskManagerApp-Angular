@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { TasklistService } from '../../services/tasklist.service';
+import { TasklistService } from '../../core/services/tasklist.service';
 @Component({
   selector: 'app-task-form',
   templateUrl: './task-form.component.html',

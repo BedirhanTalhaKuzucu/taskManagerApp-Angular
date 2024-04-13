@@ -7,12 +7,6 @@
       "id": "4"
     },
     {
-      "text": "ed",
-      "day": "deneme",
-      "isDone": false,
-      "id": "5"
-    },
-    {
       "id": "a5e5",
       "text": "asd",
       "date": "11/4/2024",
@@ -20,10 +14,17 @@
       "isDone": false
     },
     {
-      "id": "cd4e",
-      "text": "as",
-      "date": "10/4/2024",
-      "description": "vvvvvvv",
+      "id": "77e0",
+      "text": "yepyeni",
+      "date": "18/4/2024",
+      "description": "asdasdasdasdasd",
+      "isDone": true
+    },
+    {
+      "id": "8a2e",
+      "text": "gercekten new yani",
+      "date": "12/4/2024",
+      "description": "asdasdadsasd",
       "isDone": false
     }
   ]

@@ -1,28 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule, } from '@angular/common/http';
-import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/component/header/header.component';
-import { TaskFormComponent } from './core/component/task-form/task-form.component';
-import { TasksComponent } from './core/component/tasks/tasks.component';
+import { TaskFormComponent } from './view/task-form/task-form.component';
+import { TasksComponent } from './view/tasks/tasks.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppRoutingModule } from './app-routing.module';
+import { TaskItemComponent } from './view/tasks/task-item/task-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TaskFormComponent,
-    TasksComponent
+    TasksComponent,
+    TaskItemComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule 
+    NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

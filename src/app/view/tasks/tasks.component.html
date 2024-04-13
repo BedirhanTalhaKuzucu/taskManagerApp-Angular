@@ -1,0 +1,8 @@
+<div class="tasks">
+  <task-item
+    *ngFor="let task of taskList; let i = index"
+    [task]="task"
+    [index]="i"
+    (getIdtoDelete)="deleteTask($event)"
+  ></task-item>
+</div>
