@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { HighlightDirective } from 'src/app/core/directives/highlight.directive';
 import { TasklistService } from 'src/app/core/services/tasklist.service';
 
 @Component({

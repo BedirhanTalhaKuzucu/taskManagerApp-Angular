@@ -1,5 +1,5 @@
 <div class="task-item" [class.done]="isFinished" (click)="makeDone()">
-  <div>
+  <div [appHighlight]="'red'">
     <h4>{{ index + 1 }}. {{ task.text }}</h4>
     <p>{{ task.date }}</p>
   </div>
