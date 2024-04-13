@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { TasklistService } from '../../core/services/tasklist.service';
 @Component({
@@ -6,10 +6,12 @@ import { TasklistService } from '../../core/services/tasklist.service';
   templateUrl: './task-form.component.html',
   styleUrls: ['./task-form.component.css'],
 })
-export class TaskFormComponent {
+export class TaskFormComponent implements OnInit {
   @Output() getNewTask = new EventEmitter<any>();
 
   constructor(private fb: FormBuilder, public service: TasklistService) {}
+
+  ngOnInit(): void {}
 
   getTaskDetail = this.fb.group({
     text: ['', [Validators.required]],
