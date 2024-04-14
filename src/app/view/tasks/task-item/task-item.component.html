@@ -2,6 +2,10 @@
   <div [appHighlight]="'red'">
     <h4>{{ index + 1 }}. {{ task.text }}</h4>
     <p>{{ task.date }}</p>
+    <p>{{ task.description }}</p>
   </div>
-  <span (click)="deleteTask(task.id)"> X </span>
+  <div>
+    <span (click)="deleteTask(task.id)"> X </span>
+    <button (click)="goToDetails($event)">EDIT</button>
+  </div>
 </div>

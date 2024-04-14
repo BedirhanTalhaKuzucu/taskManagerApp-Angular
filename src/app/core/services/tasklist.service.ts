@@ -16,6 +16,17 @@ export class TasklistService {
     });
   }
 
+  getTask(url: string) {
+    let urlList = url.split('/');
+    let id = urlList[urlList.length - 1];
+    let urlLast = '/tasks/' + id;
+    return this.http.get<any>(this.baseUrlUpdate(urlLast), {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json; charset=utf-8',
+      }),
+    });
+  }
+
   createTask(url: any, data: any) {
     return this.http.post<any>(this.baseUrlUpdate(url), data, {
       headers: new HttpHeaders({
@@ -32,7 +43,7 @@ export class TasklistService {
     });
   }
 
-  doneTask(url: any, data: any) {
+  editTask(url: any, data: any) {
     return this.http.put<any>(this.baseUrlUpdate(url) + `/${data.id}`, data, {
       headers: new HttpHeaders({
         'Content-Type': 'application/json; charset=utf-8',

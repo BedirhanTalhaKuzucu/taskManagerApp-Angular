@@ -1,0 +1,50 @@
+<div class="Add-Task">
+  <form [formGroup]="getTaskDetail" (submit)="formSubmit()" required>
+    <div class="task-input">
+      <label htmlFor="task">Task</label>
+      <input
+        class="form-control"
+        type="text"
+        id="task"
+        placeholder="AddTask"
+        formControlName="text"
+        required
+      />
+    </div>
+
+    <div class="task-input">
+      <label htmlFor="date">Day & Time</label>
+      <div class="input-group">
+        <input
+          class="form-control disabled"
+          placeholder="yyyy-mm-dd"
+          name="dp"
+          formControlName="date"
+          ngbDatepicker
+          #d="ngbDatepicker"
+          [disabled]="true"
+        />
+        <button
+          class="btn bg-white btn-outline-secondary bi bi-calendar"
+          (click)="d.toggle()"
+          type="button"
+        >
+          Select
+        </button>
+      </div>
+    </div>
+
+    <div class="task-input">
+      <label htmlFor="date">Description</label>
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+        formControlName="description"
+      ></textarea>
+    </div>
+
+    <input type="submit" value="Edit Task" required class="save-task" />
+    <p *ngIf="updated">it is succesfuly updated</p>
+  </form>
+</div>

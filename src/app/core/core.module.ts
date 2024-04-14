@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HeaderComponent, HighlightDirective],
-  imports: [CommonModule, HttpClientModule, RouterModule],
+  imports: [CommonModule, HttpClientModule],
   exports: [HeaderComponent, HighlightDirective],
 })
 export class CoreModule {}

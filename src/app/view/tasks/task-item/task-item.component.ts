@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { HighlightDirective } from 'src/app/core/directives/highlight.directive';
 import { TasklistService } from 'src/app/core/services/tasklist.service';
 
@@ -14,7 +15,7 @@ export class TaskItemComponent implements OnInit {
 
   isFinished: boolean | undefined;
 
-  constructor(public service: TasklistService) {}
+  constructor(public service: TasklistService, private route: Router) {}
 
   deleteTask(id: any) {
     this.service.deleteTaskList('/tasks', this.task.id).subscribe((item) => {
@@ -29,8 +30,13 @@ export class TaskItemComponent implements OnInit {
   makeDone() {
     this.isFinished = !this.isFinished;
     this.task.isDone = this.isFinished;
-    this.service.doneTask('/tasks', this.task).subscribe((item) => {
+    this.service.editTask('/tasks', this.task).subscribe((item) => {
       console.log(item);
     });
+  }
+
+  goToDetails(event: MouseEvent) {
+    event.stopPropagation();
+    this.route.navigate(['tasklist', this.task.id]);
   }
 }

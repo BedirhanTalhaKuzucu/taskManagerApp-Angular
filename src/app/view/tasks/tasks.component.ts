@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TasklistService } from '../../core/services/tasklist.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tasks',
@@ -9,7 +10,7 @@ import { TasklistService } from '../../core/services/tasklist.service';
 export class TasksComponent implements OnInit {
   taskList: any = [];
 
-  constructor(public service: TasklistService) {}
+  constructor(public service: TasklistService, private router: Router) {}
 
   deleteTask(taskId: any) {
     this.taskList = this.taskList.filter((item: any) => {

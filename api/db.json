@@ -1,31 +1,25 @@
 {
   "tasks": [
     {
-      "text": "Study Angular Test",
-      "day": "Feb 5th at 2:30pm",
-      "isDone": false,
-      "id": "4"
-    },
-    {
-      "id": "a5e5",
-      "text": "asd",
+      "text": "bu yeni güncellendi lo",
       "date": "11/4/2024",
-      "description": "asdasdasd",
-      "isDone": false
+      "description": "simdi?",
+      "isDone": false,
+      "id": "a5e5"
     },
     {
-      "id": "77e0",
-      "text": "yepyeni",
-      "date": "18/4/2024",
-      "description": "asdasdasdasdasd",
-      "isDone": true
+      "text": "css düzenlemesi yap",
+      "date": "27/4/2024",
+      "description": "css düzenlenecek",
+      "isDone": false,
+      "id": "77e0"
     },
     {
       "id": "8a2e",
       "text": "gercekten new yani",
       "date": "12/4/2024",
       "description": "asdasdadsasd",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": "e205",
@@ -35,11 +29,11 @@
       "isDone": false
     },
     {
-      "id": "ac41",
       "text": "asd",
       "date": "19/4/2024",
-      "description": "sdddddddddddds",
-      "isDone": false
+      "description": "adam akilli bir metin nasil gözüküyor",
+      "isDone": false,
+      "id": "ac41"
     }
   ]
 }
